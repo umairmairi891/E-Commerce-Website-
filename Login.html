@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+
+    <nav class="container">
+        <div class="first_section">
+            <div class="brand_logo">
+                <div class="logo"> <i class="fa-regular fa-face-smile"></i> </div>
+                <div class="brand_content">
+                    <h2>SWOO</h2>
+                    <p>TECH MART</p>
+                </div>
+            </div>
+            <div class="links">
+                <ul>
+                    <li id="home">HOMES <i class="fa-solid fa-chevron-down"></i> </li>
+                    <div class="homeList hide animate__animated animate__fadeIn">
+                        <ul>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="">Home Baby</a></li>
+                            <li><a href="">Home Electronic</a></li>
+                            <li><a href="">Home Pets</a></li>
+                            <li><a href="">Home Tech</a></li>
+                        </ul>
+                    </div>
+                    <li id="pages">PAGES <i class="fa-solid fa-chevron-down"></i></li>
+                    <div class="pageslist hide animate__animated animate__fadeIn">
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Conatct</a></li>
+                            <li><a href="">Login</a></li>
+                            <li><a href="">Profile</a></li>
+                        </ul>
+                    </div>
+                    <li id="product">PRODUCTS <i class="fa-solid fa-chevron-down"></i></li>
+                    <div class="productlist hide animate__animated animate__fadeIn">
+                        <ul>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">Products Layout 2</a></li>
+                            <li><a href="">Cart</a></li>
+                            <li><a href="">Checkbox</a></li>
+                        </ul>
+                    </div>
+                    <li><a href="/Contact.html">CONTACT </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="second_section">
+            <div class="icon">
+                <div class="icon_1"><i class="fa-regular fa-bell"></i></div>
+                <div class="icon_2"><i class="fa-regular fa-heart"></i></div>
+                <div class="icon_3"><i class="fa-solid fa-shop"></i>
+                </div>
+            </div>
+            <div class="login">
+                <p>WELCOME</p>
+                <h2>LOGIN / REGISTER</h2>
+            </div>
+            <div class="cart">
+                <div class="cart_counter"><i class="fa-solid fa-cart-shopping"></i></div>
+                <div class="cart_content">
+                    <p>CART</p>
+                    <h2>$1,689.00</h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu_btn ">
+            <button id='menu_button'><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- Mobile Links -->
+
+    <div class="Mobile_links hide">
+                <ul>
+                    <li id="home">HOMES <i class="fa-solid fa-chevron-down"></i> </li>
+                    <div class="homeList hide">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Home Baby</a></li>
+                            <li><a href="">Home Electronic</a></li>
+                            <li><a href="">Home Pets</a></li>
+                            <li><a href="">Home Tech</a></li>
+                        </ul>
+                    </div>
+                    <li id="pages">PAGES <i class="fa-solid fa-chevron-down"></i></li>
+                    <div class="pageslist hide">
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Conatct</a></li>
+                            <li><a href="">Login</a></li>
+                            <li><a href="">Profile</a></li>
+                        </ul>
+                    </div>
+                    <li id="product">PRODUCTS <i class="fa-solid fa-chevron-down"></i></li>
+                    <div class="productlist hide">
+                        <ul>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">Products Layout 2</a></li>
+                            <li><a href="">Cart</a></li>
+                            <li><a href="">Checkbox</a></li>
+                        </ul>
+                    </div>
+                    <li><a href="/Contact.html">CONTACT</a></li>
+                    <li><a href="/Login.html">LOGIN</a></li>
+                    <li><a href="">REGISTER</a></li>
+                </ul>
+            </div>
+
+
+
+    <section class="search_section">
+        <div class="search">
+            <span>All Categories <i class="fa-solid fa-chevron-down"></i>
+            </span>
+            <input type="text" placeholder="Search Anything">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+        </div>
+        <div class="search_shipping">
+            FREE SHIPPING OVER $199
+        </div>
+        <div class="search_shipping">
+            30 DAYS MONEY BACK
+        </div>
+        <div class="search_shipping">
+            100% SECURE PAYMENT
+        </div>
+    </section>
+
+
+    <section class="login" data-aos="fade-up">
+        <div class="login_main_section">
+             <div class="login_img_section" data-aos="fade-up">
+                <img src="/Images/login.svg" alt="">
+             </div>
+             <div class="login_content_section" data-aos="fade-up">
+                <h2>Welcome Back</h2>
+                <p id="login_para">LOGIN TO CONTINUE</p>
+                 <div class="form">
+                    <form action="">
+                        <label for="">Email Address</label>
+                        <input type="text" placeholder="Example@gmail.com">
+                        <label for="">Password</label>
+                        <input type="text" placeholder="....">
+                        <a href="">Forget Password ?</a>
+                        <button>Login</button>
+                        <p>NEW USER ? <span>SIGN UP</span></p>
+                    </form>
+                 </div>
+             </div>
+        </div>
+    </section>
+
+
+
+     <footer>
+        <div class="footer_main_section">
+            <div class="footer_first_section">
+                <div class="footer_first_content_section">
+                    <h2>SWOO -1ST NYC TECH ONLINE MARKET </h2>
+                    <p>HOTLINE 24/7</p>
+                    <span>(025) 3686 25 16 </span>
+                    <p>257 Thatcher Road St, Brooklyn, Manhattan</p>
+                    <p>NY 10092</p>
+                    <p>contact@Swootechmart.com</p>
+                    <div class="footer_icons">
+                        <div class="icons"><i class="fa-brands fa-twitter"></i></div>
+                        <div class="icons"><i class="fa-brands fa-facebook"></i></div>
+                        <div class="icons"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="icons"><i class="fa-brands fa-youtube"></i></div>
+                        <div class="icons"><i class="fa-brands fa-pinterest"></i></div>
+                    </div>
+                </div>
+                <div class="footer_second_content_section">
+                    <h2>TOP CATEGORIES</h2>
+                    <ul>
+                        <li>Laptops</li>
+                        <li>PC & Computers</li>
+                        <li>Cell Phones</li>
+                        <li>Tablets</li>
+                        <li>Gaming & VR</li>
+                        <li>Networks</li>
+                        <li>Cameras</li>
+                    </ul>
+                </div>
+                <div class="footer_third_content_section">
+                    <h2>COMPANY</h2>
+                    <ul>
+                        <li>About Swoo</li>
+                        <li>Contact</li>
+                        <li>Career</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+                <div class="footer_forth_content_section">
+                    <h2>HELP CENTER</h2>
+                    <ul>
+                        <li>Customer Sevice</li>
+                        <li>Policy</li>
+                        <li>Terms & Conditions</li>
+                        <li>Trash Order</li>
+                    </ul>
+                </div>
+                <div class="footer_fifth_content_section">
+                    <h2>PARTNER</h2>
+                    <ul>
+                        <li>Become Seller</li>
+                        <li>Affiliate </li>
+                        <li>Advertise</li>
+                        <li>Partnership</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_second_section">
+                <div class="">
+                    <button>USD <i class="fa-solid fa-angle-down"></i></button>
+                    <button>Eng <i class="fa-solid fa-angle-down"></i></button>
+                </div>
+                <div class="subscribe_section">
+                    <h2>SUBSCRIBE & GET <span>10% OFF </span>FOR YOUR FIRST ORDER</h2>
+                    <div class="subscribe_button">
+                        <input type="text" placeholder="Enter Your Email  Address">
+                        <button>Subscribe</button>
+                    </div>
+                    <p>By Subscribing , you are accepted the our <a href="">Policy</a></p>
+                </div>
+            </div>
+            <div class="footer_third_section">
+                <div class="">
+                    <p>&copy; 2024 <span>Shawonetc3.</span>All Rights Reserved</p>
+                </div>
+                <div class="footer_logos">
+                    <img src="/Images/Paypal.png" alt="">
+                    <img src="/Images/masterCard.png" alt="">
+                    <img src="/Images/Visa.png" alt="">
+                    <img src="/Images/Klarna.svg" alt="">
+                </div>
+                <div class="">
+                    <button>Mobile Site</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+<script src="/index.js"></script>
+
+<script>
+    AOS.init({
+        duration:1000,
+      });
+</script>
+
+</html>
