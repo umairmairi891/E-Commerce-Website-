@@ -29,3 +29,31 @@ product.addEventListener('click', ()=>{
     homeList.classList.add('hide')
     pagesList.classList.add('hide')
 })
+
+const Mobilehome=document.getElementById("Mobilehome")
+const MobilehomeList=document.querySelector('.MobilehomeList')
+
+const Mobilepages=document.getElementById('Mobilepages')
+const Mobilepageslist=document.querySelector('.Mobilepageslist')
+
+const Mobileproduct=document.getElementById('Mobileproduct')
+const Mobileproductlist=document.querySelector('.Mobileproductlist')
+
+Mobilehome.addEventListener('click',()=>{
+  MobilehomeList.classList.toggle('hide')
+  Mobilepageslist.classList.add('hide')
+  Mobileproductlist.classList.add('hide') 
+})
+
+Mobilepages.addEventListener('click', ()=>{
+    Mobilepageslist.classList.toggle('hide')
+    MobilehomeList.classList.add('hide')
+    Mobileproductlist.classList.add('hide')
+})
+
+
+Mobileproduct.addEventListener('click',()=>{
+    Mobileproductlist.classList.toggle('hide')
+    MobilehomeList.classList.add('hide')
+    Mobilepageslist.classList.add('hide')
+})

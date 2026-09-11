@@ -91,7 +91,7 @@ ul li i{
     z-index: 110;
     padding: 0;
     border-radius: 3px;
-  z-index: 110;
+
 }
 .hide{
     display: none !important;
@@ -106,7 +106,6 @@ ul li i{
     z-index: 110;
     padding: 0;
     border-radius: 3px;
-
 }
 
 .homeList ul{
@@ -143,34 +142,26 @@ ul li i{
     border-radius: 3px;
 }
 .pageslist ul{
-    list-style: none;
     display: flex;
     flex-direction: column;
-    
-    padding: 0;
+    gap: 20px;
     align-items: start;
     justify-content: start;
+    list-style: none;
+    padding: 0;
     margin: 0;
-    /* margin-left: -30px; */
+
 }
 .pageslist ul li{
-    padding: 0;
-    margin-left: 0px;
-    border-bottom: 1px solid gray;
+    padding: 8px 30px;
+    margin-left: 1px;
 }
 
 .pageslist ul li a{
     text-decoration: none;
-    width: 100%;
     color: black;
-    padding: 15px 30px;
 }
-.pageslist ul li a:hover{
-    background-color: navy;
-    color: white;
-    transition: all .5s ease;
-    border-radius: 5px;
-}
+
 .productlist{
     position: absolute;
     background-color: white;
@@ -185,25 +176,22 @@ ul li i{
 .productlist ul{
     display: flex;
     flex-direction: column;
-    padding: 0px 0px;
+    gap: 20px;
+    align-items: start;
+    justify-content: start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 .productlist ul li{
-    padding: 1px 1px;
-    margin-left: 0px;
-    border-bottom: 1px solid gray;
+    
+ padding: 10px 10px;
 }
 .productlist ul li a{
     text-decoration: none;
     color: black;
-    width: 100%;
-    padding: 10px 10px;
 }
-.productlist ul li a:hover{
-    background-color: navy;
-    color: white;
-    transition: all .5s ease;
-    border-radius: 5px;
-}
+
 
 .second_section{
     display: flex;
@@ -276,6 +264,9 @@ ul li i{
 
 .animate__animated.animate__fadeInUp {
   --animate-duration:2s;
+}
+.animate__animated .animate__fadeInDown{
+    --animation-duration: 1s;
 }
 .animate__animated.animate__fadeIn{
     --animation-duration: 1s;
@@ -1717,4 +1708,15 @@ display: flex;
     .lower_section img{
         width: 100%;
     }
+    .Mobile_links .homeList{
+    position: absolute;
+    background-color: white;
+    border: 1px solid gainsboro;
+    top: 50px;
+    height: auto;
+    z-index: 110;
+    padding: 0;
+    border-radius: 3px;
+
+}
 }
