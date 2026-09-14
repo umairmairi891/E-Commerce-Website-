@@ -82,6 +82,9 @@ nav{
 ul li i{
     font-size: 12px;
 }
+.Mobile_links{
+    z-index: 110;
+}
 .Mobile_links .homeList{
     position: absolute;
     background-color: white;
@@ -272,28 +275,6 @@ ul li i{
     --animation-duration: 1s;
 }
 
-@keyframes reveal-in {
-  from {
-    opacity: 0;
-    transform: translateY(200px) ;
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0) ;
-  }
-}
-
-.animate-me {
-  /* Standard animation declaration (leave out the time duration like 2s) */
-  animation-name: reveal-in;
-  animation-fill-mode: both;
-  animation-duration: 8s;
-  animation-timeline: view();
-  
-  /* Optional: Adjusts exactly when the animation starts and ends */
-  animation-range: entry 30% cover 40%; 
-}
 
 
 
@@ -417,6 +398,7 @@ ul li i{
 .img_3{
     position: relative;
     overflow: hidden;
+    border-radius: 4px;
 }
 .img_3 img:hover{
     
@@ -558,8 +540,9 @@ ul li i{
     width: 100%;
     height: 100px;
     background-color: white;
-    
+    border-radius: 5px;
 }
+
 .deal_1{
     grid-column: 1/ span 2;
     height: 100px;
@@ -570,6 +553,9 @@ ul li i{
     color: white;
 }
 
+.deals img{
+    border-radius: 5px;
+}
 .deal_2 img{
     width: 100%;
     height: 100%;
@@ -682,12 +668,13 @@ ul li i{
     width: 90%;
     margin: 40px auto;
     background-color: white;
-    padding: 10px 10px;
+    border-radius: 5px;
 }
 .items_content{
     display: flex;
     align-items: center;
     gap: 30px;
+    padding: 10px 10px;
 }
 .item_image_section{
     gap:20px;
@@ -740,8 +727,11 @@ ul li i{
     width: 90%;
     background-color: white;
     margin: 20px auto;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     
+}
+.brand_new_for .content{
+    padding: 5px 20px;
 }
 .brand_img_section{
     display: grid;
@@ -786,7 +776,8 @@ ul li i{
     background-color: white;
     width: 90%;
     margin: 20px auto;
-    padding: 10px 10px;
+    /* padding: 10px 10px; */
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
 }
@@ -882,13 +873,16 @@ ul li i{
     margin-bottom: 10px;
     margin-top: 10px;
 }
-.laptops_main_section{
-    display: flex;
-    flex-direction: column;
+.best_laptops_section{
     width: 90%;
     background-color: white;
     margin: 10px auto;
-    padding: 10px 10px;
+    border-radius: 5px;
+}
+.laptops_main_section{
+    display: flex;
+    flex-direction: column;
+     padding: 10px 10px;
 }
 .laptops_heading{
     display: flex;
@@ -1108,7 +1102,7 @@ ul li i{
     width: 90%;
     background-color: white;
     margin: 20px auto;
-    padding: 10px 10px;
+    /* padding: 10px 10px; */
     border-radius: 5px;
 }
 .recently_heading{
@@ -1116,6 +1110,7 @@ ul li i{
     align-items: center;
     justify-content: space-between;
     gap: 50px;
+    padding: 10px 20px;
 }
 .recently_heading h2{
     font-size: 18px;
@@ -1124,6 +1119,7 @@ ul li i{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
+    padding: 10px 20px;
 }
 .recently_viewed_content{
     width: 100%;
@@ -1478,9 +1474,11 @@ display: flex;
 }
 
 @media (max-width:546px) {
+    
     .links{
         display: none;
     }
+    
     .second_section{
         display: none;
     }
@@ -1493,11 +1491,12 @@ display: flex;
         border: none;
     }
     .search_section{
-         justify-content: start;
+         justify-content: space-around;
          
     }
     .search{
-        width: 100%;
+        width: 90%;
+        padding: 0px 10px;
     }
     .search_shipping{
         display: none;
@@ -1650,6 +1649,9 @@ display: flex;
     .Cameras_section{
         grid-template-columns: 1fr;
     }
+    .camera_heading h2{
+        font-size: 15px;
+    }
     .cash_content{
         flex-direction: column;
         gap: 30px;
@@ -1663,10 +1665,12 @@ display: flex;
     .swoo_content{
         padding: 0px 20px;
     }
+    
     .footer_first_section{
         display: flex;
         flex-direction: column;
         padding: 10px 20px;
+        
     }
     .footer_first_content_section{
         padding: 0px 10px;
